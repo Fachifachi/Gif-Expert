@@ -1,0 +1,65 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/* Estilos generales */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #F9E5E6; /* Rosa pastel */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  margin-top: 6%;
+}
+
+.container-gifs {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 4%;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.container-gifs div img {
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+input[type="text"] {
+  font-size: inherit;
+  padding: 12px 20px;
+  outline: none;
+  border: solid 1px #ccc; /* Borde suave */
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: border-color 0.3s ease; /* Transición suave */
+}
+
+input[type="text"]:focus {
+  border-color: #ff7eb9; /* Cambiar color de borde al enfocar */
+}
+
+.error {
+  color: #ff7eb9; /* Rosa pastel */
+}
+
+p.author {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  gap: 7px;
+  color: #333; /* Color de texto más oscuro */
+}
+
+p.author a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ff7eb9; /* Rosa pastel */
+}
